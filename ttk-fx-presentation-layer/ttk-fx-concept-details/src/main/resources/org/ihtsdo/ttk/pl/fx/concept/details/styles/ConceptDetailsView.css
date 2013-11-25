@@ -1,0 +1,145 @@
+/* 
+    Document   : ConceptDetails
+    Created on : May 9, 2013, 6:41:24 PM
+    Author     : kec
+    Description:
+        Purpose of the stylesheet follows.
+
+Good reference: 
+
+    http://fxexperience.com/2012/02/customized-segmented-toolbar-buttons/
+*/
+
+root { 
+    display: block;
+}
+
+.dl-grid {
+    -fx-vgap: 4;
+    -fx-alignment: top-left;
+}
+
+.combo-box {
+    -fx-background-radius: 0;
+}
+
+/* ------- OPEN BUTTON ------- */
+.combo-box-base .arrow-button {
+    -fx-background-radius: 0;
+}
+
+.dl-definition-root {
+    
+}
+.dl-necessary-set {
+    
+}
+.dl-sufficient-set {
+    
+}
+.dl-and {
+    
+}
+.dl-or {
+    
+}
+.dl-disjoint-with {
+    
+}
+.dl-existential-restriction {
+    -fx-background-color: #FFFFCC;
+    -fx-border-color: black;
+    -fx-border-style: solid;
+    -fx-border-width: 1;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-border-insets: 0;
+    -fx-graphic-text-gap: 2;
+    -fx-label-padding: 0 2 2 2;
+    -fx-wrap-text: true;
+    -fx-text-alignment:left;
+}
+.dl-universal-restriction {
+    -fx-background-color: #FFFFCC;
+    -fx-border-color: black;
+    -fx-border-style: solid;
+    -fx-border-width: 1;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-border-insets: 0;
+    -fx-graphic-text-gap: 2;
+    -fx-label-padding: 0 2 2 2;
+    -fx-wrap-text: true;
+    -fx-text-alignment:left;
+}
+.dl-concept-reference-primitive {
+    -fx-background-color: #99CCFF;
+    -fx-border-color: black;
+    -fx-border-style: solid;
+    -fx-border-width: 1;
+    -fx-border-radius: 0;
+    -fx-border-insets: 0;
+    -fx-label-padding: 5;
+    -fx-wrap-text: true;
+    -fx-text-alignment:left;
+}
+.dl-concept-reference-defined {
+    -fx-background-color: #CCCCFF;
+    -fx-border-color: black;
+    -fx-border-style: solid;
+    -fx-border-width: 1;
+    -fx-border-radius: 0;
+    -fx-border-insets: 0;
+    -fx-label-padding: 5;
+    -fx-wrap-text: true;
+    -fx-text-alignment:left;
+}
+
+.dl-concept-reference-primitive:focused {
+    -fx-border-color: red;
+}
+.dl-concept-reference-defined:focused {
+    -fx-border-color: red;
+}
+
+.dl-concept-reference-primitive .dl-drag-accept {
+    -fx-background-color: turquoise;
+}
+.dl-concept-reference-defined .dl-drag-accept {
+    -fx-background-color: turquoise;
+}
+
+.dl-field-substution {
+    
+}
+.dl-template-merge {
+    
+}
+.dl-edge-true {
+    
+}
+.dl-edge-galse {
+    
+}
+.dl-feature-int {
+    
+}
+.dl-feature-long {
+    
+}
+.dl-feature-float {
+    
+}
+
+.dl-role-group {
+    
+}
+.dl-drop-disclosure {
+    -fx-background-color: orange;
+    
+}
+
+.dl-unknown {
+        -fx-background-color: red;
+}
+  

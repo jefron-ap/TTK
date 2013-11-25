@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import org.ihtsdo.ttk.pl.fx.concept.details.*?>
+<?scenebuilder-classpath-element ../../../../target/ttk-fx-concept-details-3.1.1-SNAPSHOT.jar?>
+<?scenebuilder-classpath-element ../../../../../../ttk-api-layer/ttk-logic/target/ttk-logic-3.1.1-SNAPSHOT.jar?>
+<?scenebuilder-classpath-element ../../../../../../ttk-api-layer/ttk-api/target/ttk-api-3.1.1-SNAPSHOT.jar?>
+
+<GridPane maxHeight="-1.0" maxWidth="1.7976931348623157E308" prefHeight="-1.0" prefWidth="-1.0" xmlns:fx="http://javafx.com/fxml" fx:controller="org.ihtsdo.ttk.pl.fx.concept.details.ConceptDetailsViewController">
+  <children>
+    <ComboBox id="contextChoiceBox" fx:id="contextComboBox" editable="false" prefWidth="600.0" GridPane.columnIndex="0" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="0" GridPane.valignment="TOP">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+      <stylesheets>
+        <URL value="@../styles/ConceptDetailsView.css" />
+      </stylesheets>
+    </ComboBox>
+    <TextField fx:id="textField" prefHeight="22.0" prefWidth="600.0" GridPane.columnIndex="0" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="TOP" GridPane.vgrow="ALWAYS" />
+    <DefinitionPane fx:id="definitionPane" GridPane.columnIndex="0" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="TOP" GridPane.vgrow="NEVER" />
+  </children>
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="-1.0" vgrow="NEVER" />
+    <RowConstraints maxHeight="-1.0" minHeight="10.0" prefHeight="-1.0" vgrow="NEVER" />
+    <RowConstraints maxHeight="-1.0" minHeight="20.0" prefHeight="-1.0" valignment="TOP" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" valignment="TOP" vgrow="ALWAYS" />
+  </rowConstraints>
+  <stylesheets>
+    <URL value="@../styles/ConceptDetailsView.css" />
+  </stylesheets>
+</GridPane>

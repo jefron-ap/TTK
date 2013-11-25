@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="820.9999000000025" prefWidth="1193.0" xmlns:fx="http://javafx.com/fxml" fx:controller="org.ihtsdo.ttk.fx.app.IsaacController">
+  <children>
+    <BorderPane prefHeight="821.0" prefWidth="1101.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-94.0" AnchorPane.topAnchor="0.0">
+      <center>
+        <SplitPane disable="false" dividerPositions="0.851037851037851" focusTraversable="true" orientation="VERTICAL" prefHeight="807.0" prefWidth="1105.0">
+          <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+              <children>
+                <SplitPane dividerPositions="0.38503507404520654" focusTraversable="true" prefHeight="-1.0" prefWidth="-1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <items>
+                    <AnchorPane fx:id="taxonomyAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="692.0" prefWidth="441.0">
+                      <children>
+                        <BorderPane fx:id="taxonomyBorderPane" prefHeight="692.0" prefWidth="468.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                      </children>
+                    </AnchorPane>
+                    <AnchorPane fx:id="conceptDetailsAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                      <children>
+                        <BorderPane fx:id="conceptDetailsBorderPane" prefHeight="-1.0" prefWidth="-1.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                      </children>
+                    </AnchorPane>
+                  </items>
+                </SplitPane>
+              </children>
+            </AnchorPane>
+            <AnchorPane fx:id="searchAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="1005.0" />
+          </items>
+        </SplitPane>
+      </center>
+    </BorderPane>
+  </children>
+</AnchorPane>

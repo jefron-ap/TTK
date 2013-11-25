@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.oxygenxml.com/docbook/xml/5.0/rng/dbsvg.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbook.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<article xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.0">
+    <title>Action Service</title>
+    <sect1>
+        <title>Section1 Title</title>
+        <para>The action service is destined to integrate with JavaFX event handling. The
+            fundamental properties of a JavaFX event are that events have a
+                <emphasis>type</emphasis>, <emphasis>source</emphasis>, and a
+                <emphasis>target</emphasis>. The action service will respond to events by providing
+            a possibly empty set of actions that are appropriate for individual events.</para>
+        <para>The action service will interact with the Authentication and Authorization service and
+            the Preferences service to populate actions. </para>
+        <para>A dispatch chain could start with Action Service Dispatcher->Authentication &amp;
+            Authorization->Drools</para>
+        <para>The Action Service Dispatcher should not run on the event thread. Maybe should have
+            two dispatchers, one on the event thread, and one on the Action Service Dispatcher. </para>
+        <para>Have objects that implement an interface for user selection of actions. Keep this in a
+            weak set. </para>
+        <para>Actions should use JavaFX tasks for the underlying processing. </para>
+        <para/>
+        <para>An inline SVG graphic:  <inlinemediaobject>
+            <imageobject>
+                <imagedata>
+                    <svg:svg xmlns:svg="http://www.w3.org/2000/svg" width="3cm" height="3cm"
+                        viewBox="0 0 400 400">
+                        <svg:g style="fill-opacity:0.7; stroke:black; stroke-width:0.1cm;">
+                            <svg:circle cx="6cm" cy="2cm" r="100" style="fill:red;"
+                                transform="translate(0,50)"/>
+                            <svg:circle cx="6cm" cy="2cm" r="100" style="fill:blue;"
+                                transform="translate(70,150)"/>
+                            <svg:circle cx="6cm" cy="2cm" r="100" style="fill:green;"
+                                transform="translate(-70,150)"/>
+                        </svg:g>
+                    </svg:svg>                    
+                </imagedata>
+            </imageobject>
+        </inlinemediaobject>
+        </para>
+        <para/>
+        <sect2>
+            <title>Action Service Integration</title>
+            <para>The action service will integrate with the JavaFX event model via use of Event
+                Filters, so that the actions will be available to the target event handler.</para>
+            <para/>
+            <sect3>
+                <title>Asynchronous Action Determination</title>
+                <para>Computing all allowable actions on the FX event thread could make event
+                    handling sluggish. The actions need to be computed asynchronously, and the
+                    actions made available to the event handler when the action computation is
+                    complete. Maybe consume the event, and then restart an event when the actions
+                    become available?</para>
+            </sect3>
+        </sect2>
+        <sect2>
+            <title>Event type extensions</title>
+            <para>The JavaFX event model has event types that correspond to user action that occur
+                once the application has been initialized. However, some potential actions need to
+                be determined when opening a window, (such as what actions should be available
+                within which menus). To enable the Action Service to identify these actions, we add
+                the following event types to the standard JavaFX event types: </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Menu initialization event</para>
+                    </listitem>
+                    <listitem>
+                        <para>Context added event</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </sect2>
+    </sect1>
+</article>

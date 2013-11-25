@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>rebuild</actionName>
+            <goals>
+                <goal>-e</goal>
+                <goal>clean</goal>
+                <goal>install</goal>
+            </goals>
+            <properties>
+                <Env.MAVEN_OPTS>-ea -d64 -XX:+UseCompressedOops -Xmx12g -Xms4g</Env.MAVEN_OPTS>
+            </properties>
+        </action>
+        <action>
+            <actionName>CUSTOM-debug clean install</actionName>
+            <displayName>debug clean install</displayName>
+            <goals>
+                <goal>-e</goal>
+                <goal>clean</goal>
+                <goal>install</goal>
+            </goals>
+            <properties>
+                <jpda.listen>true</jpda.listen>
+                <Env.MAVEN_OPTS>-ea -d64 -XX:+UseCompressedOops -Xmx4g -Xms1g -Xdebug -Xrunjdwp:transport=dt_socket,server=n,address=${jpda.address}</Env.MAVEN_OPTS>
+            </properties>
+        </action>
+        <action>
+            <actionName>build-with-dependencies</actionName>
+            <reactor>also-make</reactor>
+            <goals>
+                <goal>-e</goal>
+                <goal>install</goal>
+            </goals>
+            <properties>
+                <Env.MAVEN_OPTS>-ea -d64 -XX:+UseCompressedOops -Xmx12g -Xms4g</Env.MAVEN_OPTS>
+            </properties>
+        </action>
+        <action>
+            <actionName>build</actionName>
+            <goals>
+                <goal>-e</goal>
+                <goal>install</goal>
+            </goals>
+            <properties>
+                <Env.MAVEN_OPTS>-ea -d64 -XX:+UseCompressedOops -Xmx12g -Xms4g</Env.MAVEN_OPTS>
+            </properties>
+        </action>
+        <action>
+            <actionName>CUSTOM-debug install</actionName>
+            <displayName>debug install</displayName>
+            <goals>
+                <goal>-e</goal>
+                <goal>install</goal>
+            </goals>
+            <properties>
+                <jpda.listen>true</jpda.listen>
+                <Env.MAVEN_OPTS>-ea -d64 -XX:+UseCompressedOops -Xmx4g -Xms1g -Xdebug -Xrunjdwp:transport=dt_socket,server=n,address=${jpda.address}</Env.MAVEN_OPTS>
+            </properties>
+        </action>
+        <action>
+            <actionName>CUSTOM-profile metrics</actionName>
+            <displayName>profile metrics</displayName>
+            <goals>
+                <goal>-e</goal>
+                <goal>clean</goal>
+                <goal>install</goal>
+            </goals>
+            <properties>
+                <Env.MAVEN_OPTS>-Xmx4g -Xms4g -agentpath:/Applications/jprofiler7/bin/macos/libjprofilerti.jnilib=port=8849</Env.MAVEN_OPTS>
+                
+                
+                
+            </properties>
+        </action>
+    </actions>

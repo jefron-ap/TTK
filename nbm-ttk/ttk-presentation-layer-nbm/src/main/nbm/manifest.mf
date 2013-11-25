@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+OpenIDE-Module-Install: org/ihtsdo/ttk/pl/nb/Installer.class
+OpenIDE-Module-Localizing-Bundle: org/ihtsdo/ttk/pl/nb/Bundle.properties
+OpenIDE-Module-Requires: org.openide.windows.WindowManager

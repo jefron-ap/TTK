@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="1.0" prefHeight="22.0" prefWidth="22.0" xmlns:fx="http://javafx.com/fxml">
+  <children>
+    <Line endX="8.0" endY="0.0" layoutX="8.0" layoutY="6.0" startX="0.0" strokeWidth="2.0" />
+    <Line endX="8.0" endY="0.0" layoutX="8.0" layoutY="11.0" startX="0.0" strokeWidth="2.0" />
+    <Line endX="8.0" endY="0.0" layoutX="8.0" layoutY="16.0" startX="0.0" strokeWidth="2.0" />
+    <Line endX="0.0" endY="10.0" layoutX="16.0" layoutY="6.0" startX="0.0" strokeWidth="2.0" />
+  </children>
+</AnchorPane>

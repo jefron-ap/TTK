@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.ihtsdo.ttk</groupId>
+        <artifactId>ttk-fx-application-layer</artifactId>
+        <version>3.2.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>ttk-fx-application</artifactId>
+    <name>${branch}:L4: FX Application Layer: Isaac</name>
+    <packaging>jar</packaging>
+    
+    <organization>
+        <name>VA Office of Informatics and Analytics</name>
+    </organization>
+
+    <build>
+        <plugins>
+
+            <plugin>
+                <groupId>com.zenjava</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>1.5</version>
+                <configuration>
+
+                    <mainClass>org.ihtsdo.ttk.fx.app.IsaacApp</mainClass>
+
+                    <!-- only required if signing the jar file -->
+                    <keyStoreAlias>example-user</keyStoreAlias>
+                    <keyStorePassword>example-password</keyStorePassword>
+                    <permissions>
+                        <permission>all-permissions</permission>
+                    </permissions>
+
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>org.ihtsdo.otf</groupId>
+            <artifactId>tcc-lookup</artifactId>
+            <version>${otf.version}</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>org.ihtsdo.ttk</groupId>
+            <artifactId>ttk-action-service</artifactId>
+            <type>jar</type>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ihtsdo.ttk</groupId>
+            <artifactId>ttk-authentication-authorization-service</artifactId>
+            <type>jar</type>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ihtsdo.otf</groupId>
+            <artifactId>tcc-dto-ddo</artifactId>
+            <version>${otf.version}</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>org.ihtsdo.ttk</groupId>
+            <artifactId>ttk-fx-pl-helper</artifactId>
+            <type>jar</type>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ihtsdo.ttk</groupId>
+            <artifactId>ttk-fx-multiparent-taxonomy</artifactId>
+            <type>jar</type>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ihtsdo.ttk</groupId>
+            <artifactId>ttk-fx-concept-details</artifactId>
+            <type>jar</type>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ihtsdo.ttk</groupId>
+            <artifactId>ttk-fugue-icons</artifactId>
+            <type>jar</type>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ihtsdo.ttk</groupId>
+            <artifactId>ttk-diagona-icons</artifactId>
+            <type>jar</type>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ihtsdo.ttk</groupId>
+            <artifactId>ttk-flag-icons</artifactId>
+            <type>jar</type>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ihtsdo.ttk</groupId>
+            <artifactId>ttk-silk-icons</artifactId>
+            <type>jar</type>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.ihtsdo.otf</groupId>
+            <artifactId>tcc-rest-client</artifactId>
+            <version>${otf.version}</version>
+            <type>jar</type>
+        </dependency>
+    </dependencies>
+    <profiles>
+        <profile>
+            <id>java7</id>
+            <dependencies>
+                <dependency>
+                    <groupId>com.sun.javafx</groupId>
+                    <artifactId>jfxrt</artifactId>
+                </dependency>
+            </dependencies>              
+        </profile>
+    </profiles>
+
+</project>

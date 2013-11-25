@@ -1,0 +1,26 @@
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+ 	<groupId>org.ihtsdo.ttk</groupId>
+	<artifactId>ttk-business-logic-layer</artifactId>
+	<version>3.1.1-SNAPSHOT</version>
+    </parent>
+    <artifactId>ttk-cern-prim</artifactId>
+    <packaging>jar</packaging>
+    <name>${branch}:L1: Business Logic Layer: CERN Primitive Collections</name>
+
+    <url>http://acs.lbl.gov/software/colt/index.html</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>

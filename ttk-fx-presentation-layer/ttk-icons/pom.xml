@@ -1,0 +1,19 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.ihtsdo.ttk</groupId>
+    <artifactId>ttk-fx-presentation-layer</artifactId>
+    <version>3.2.0-SNAPSHOT</version>
+  </parent>
+  <artifactId>ttk-icons</artifactId>
+  <name>${branch}:L3: FX Presentation Layer: Icons</name>
+  <packaging>pom</packaging>
+  <modules>
+    <module>ttk-flag-icons</module>
+    <module>ttk-fugue-icons</module>
+    <module>ttk-silk-icons</module>
+    <module>ttk-diagona-icons</module>
+  </modules>
+</project>

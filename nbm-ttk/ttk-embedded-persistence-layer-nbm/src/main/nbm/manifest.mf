@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+OpenIDE-Module-Install: org/ihtsdo/ttk/bdb/nbm/Installer.class
+OpenIDE-Module-Localizing-Bundle: org/ihtsdo/ttk/bdb/nbm/Bundle.properties

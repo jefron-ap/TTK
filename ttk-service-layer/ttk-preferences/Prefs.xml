@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE preferences SYSTEM "http://java.sun.com/dtd/preferences.dtd">
+<preferences EXTERNAL_XML_VERSION="1.0">
+  <root type="system">
+    <map/>
+    <node name="org.ihtsdo.ttk;ttk-preferences;3.2.0-SNAPSHOT;maven-surefire-plugin">
+      <map/>
+      <node name="org.ihtsdo.ttk.queue.QueueList.Fields">
+        <map>
+          <entry key="QUEUE_LIST" value="2"/>
+        </map>
+        <node name="0">
+          <map/>
+          <node name="org.ihtsdo.ttk.preferences.EnumBasedPreferences.Fields">
+            <map>
+              <entry key="CLASS_NAME" value="org.ihtsdo.ttk.queue.QueuePreferences"/>
+            </map>
+          </node>
+          <node name="org.ihtsdo.ttk.queue.QueuePreferences.Fields">
+            <map>
+              <entry key="ID" value="6f158811-2540-41de-a560-aeaa37b39a3d"/>
+              <entry key="READ_INSTEAD_OF_TAKE" value="false"/>
+              <entry key="DISPLAY_NAME" value="unnamed queue"/>
+              <entry key="QUEUE_DIRECTORY" value="queues/queue.inbox"/>
+              <entry key="QUEUE_INSTANCE_PROPERTIES_LIST" value="0"/>
+            </map>
+          </node>
+        </node>
+        <node name="1">
+          <map/>
+          <node name="org.ihtsdo.ttk.preferences.EnumBasedPreferences.Fields">
+            <map>
+              <entry key="CLASS_NAME" value="org.ihtsdo.ttk.queue.QueuePreferences"/>
+            </map>
+          </node>
+          <node name="org.ihtsdo.ttk.queue.QueuePreferences.Fields">
+            <map>
+              <entry key="ID" value="big bad queue"/>
+              <entry key="READ_INSTEAD_OF_TAKE" value="true"/>
+              <entry key="DISPLAY_NAME" value="some other display"/>
+              <entry key="QUEUE_DIRECTORY" value="queues/some other location"/>
+              <entry key="QUEUE_INSTANCE_PROPERTIES_LIST" value="2"/>
+            </map>
+            <node name="0">
+              <map/>
+              <node name="org.ihtsdo.ttk.preferences.EnumBasedPreferences.Fields">
+                <map>
+                  <entry key="CLASS_NAME" value="org.ihtsdo.ttk.queue.QueueType"/>
+                </map>
+              </node>
+              <node name="org.ihtsdo.ttk.queue.QueueType.Fields">
+                <map>
+                  <entry key="QUEUE_TYPE" value="OUTBOX"/>
+                </map>
+              </node>
+            </node>
+            <node name="1">
+              <map/>
+              <node name="org.ihtsdo.ttk.preferences.EnumBasedPreferences.Fields">
+                <map>
+                  <entry key="CLASS_NAME" value="org.ihtsdo.ttk.queue.QueueAddress"/>
+                </map>
+              </node>
+              <node name="org.ihtsdo.ttk.queue.QueueAddress.Fields">
+                <map>
+                  <entry key="QUEUE_ADDRESS" value="qp2 address"/>
+                </map>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </root>
+</preferences>

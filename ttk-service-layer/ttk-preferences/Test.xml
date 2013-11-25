@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE preferences SYSTEM "http://java.sun.com/dtd/preferences.dtd">
+<preferences EXTERNAL_XML_VERSION="1.0">
+  <root type="user">
+    <map/>
+    <node name="com.ihtsdo.test">
+      <map>
+        <entry key="org.ihtsdo.ttk.queue.QueueList.Fields.QUEUE_LIST" value="2"/>
+      </map>
+      <node name="org.ihtsdo.ttk.queue.QueueList.Fields.QUEUE_LIST.0">
+        <map>
+          <entry key="org.ihtsdo.ttk.queue.QueuePreferences.Fields.QUEUE_INSTANCE_PROPERTIES_LIST" value="3"/>
+          <entry key="org.ihtsdo.ttk.preferences.EnumBasedPreferences.FIELDS.CLASS_NAME" value="org.ihtsdo.ttk.queue.QueuePreferences"/>
+          <entry key="org.ihtsdo.ttk.queue.QueuePreferences.Fields.QUEUE_DIRECTORY" value="/Users/kec/NetBeansProjects/ttk/ttk-preferences/queue/inbox"/>
+        </map>
+        <node name="org.ihtsdo.ttk.queue.QueuePreferences.Fields.QUEUE_INSTANCE_PROPERTIES_LIST.0">
+          <map>
+            <entry key="org.ihtsdo.ttk.preferences.EnumBasedPreferences.FIELDS.CLASS_NAME" value="org.ihtsdo.ttk.queue.QueueAddress"/>
+            <entry key="org.ihtsdo.ttk.queue.QueueAddress.Fields.QUEUE_ADDRESS" value="dwa1@informatics.com"/>
+          </map>
+        </node>
+        <node name="org.ihtsdo.ttk.queue.QueuePreferences.Fields.QUEUE_INSTANCE_PROPERTIES_LIST.1">
+          <map>
+            <entry key="org.ihtsdo.ttk.preferences.EnumBasedPreferences.FIELDS.CLASS_NAME" value="org.ihtsdo.ttk.queue.QueueName"/>
+            <entry key="org.ihtsdo.ttk.queue.QueueName.Fields.QUEUE_NAME" value="user inbox"/>
+          </map>
+        </node>
+        <node name="org.ihtsdo.ttk.queue.QueuePreferences.Fields.QUEUE_INSTANCE_PROPERTIES_LIST.2">
+          <map>
+            <entry key="org.ihtsdo.ttk.preferences.EnumBasedPreferences.FIELDS.CLASS_NAME" value="org.ihtsdo.ttk.queue.QueueType"/>
+            <entry key="org.ihtsdo.ttk.queue.QueueType.Fields.QUEUE_TYPE" value="INBOX"/>
+          </map>
+        </node>
+      </node>
+      <node name="org.ihtsdo.ttk.queue.QueueList.Fields.QUEUE_LIST.1">
+        <map>
+          <entry key="org.ihtsdo.ttk.queue.QueuePreferences.Fields.QUEUE_INSTANCE_PROPERTIES_LIST" value="3"/>
+          <entry key="org.ihtsdo.ttk.preferences.EnumBasedPreferences.FIELDS.CLASS_NAME" value="org.ihtsdo.ttk.queue.QueuePreferences"/>
+          <entry key="org.ihtsdo.ttk.queue.QueuePreferences.Fields.QUEUE_DIRECTORY" value="/Users/kec/NetBeansProjects/ttk/ttk-preferences/some other location"/>
+        </map>
+        <node name="org.ihtsdo.ttk.queue.QueuePreferences.Fields.QUEUE_INSTANCE_PROPERTIES_LIST.0">
+          <map>
+            <entry key="org.ihtsdo.ttk.preferences.EnumBasedPreferences.FIELDS.CLASS_NAME" value="org.ihtsdo.ttk.queue.QueueAddress"/>
+            <entry key="org.ihtsdo.ttk.queue.QueueAddress.Fields.QUEUE_ADDRESS" value="qp2 address"/>
+          </map>
+        </node>
+        <node name="org.ihtsdo.ttk.queue.QueuePreferences.Fields.QUEUE_INSTANCE_PROPERTIES_LIST.1">
+          <map>
+            <entry key="org.ihtsdo.ttk.preferences.EnumBasedPreferences.FIELDS.CLASS_NAME" value="org.ihtsdo.ttk.queue.QueueName"/>
+            <entry key="org.ihtsdo.ttk.queue.QueueName.Fields.QUEUE_NAME" value="qp2 name"/>
+          </map>
+        </node>
+        <node name="org.ihtsdo.ttk.queue.QueuePreferences.Fields.QUEUE_INSTANCE_PROPERTIES_LIST.2">
+          <map>
+            <entry key="org.ihtsdo.ttk.preferences.EnumBasedPreferences.FIELDS.CLASS_NAME" value="org.ihtsdo.ttk.queue.QueueType"/>
+            <entry key="org.ihtsdo.ttk.queue.QueueType.Fields.QUEUE_TYPE" value="OUTBOX"/>
+          </map>
+        </node>
+      </node>
+    </node>
+  </root>
+</preferences>
